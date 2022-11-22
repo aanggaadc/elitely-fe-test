@@ -1,0 +1,62 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s;
+  margin-bottom: 16px;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.indicators-default {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+
+.indicator-default-btn {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(30, 30, 30, 0.08);
+  cursor: pointer;
+  padding: 0;
+
+  &.active {
+    background: #b2294b;
+    cursor: default;
+  }
+}
+
+.indicators-page {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #fffdfb;
+  border-radius: 32px;
+  font-family: "Be Vietnam";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  span {
+    color: gray;
+    font-family: inherit;
+  }
+}

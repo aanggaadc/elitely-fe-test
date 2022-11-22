@@ -1,0 +1,41 @@
+.carousel-container {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.main-detail {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.main-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e1e1e;
+  margin-bottom: 8px;
+}
+
+.main-occupation {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+}
+
+.occupation-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  img {
+    width: 22px;
+  }
+}
+
+.main-description {
+  font-weight: 400;
+  font-size: 12px;
+  color: #1e1e1e;
+  margin-bottom: 60px;
+}

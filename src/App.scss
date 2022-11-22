@@ -1,0 +1,40 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.main {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+}
+
+.section-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.section-btn {
+  width: 33.33%;
+  height: 48px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 48px;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.sidebar {
+  display: none;
+  width: 20%;
+
+  @media (min-width: 760px) {
+    display: block;
+  }
+}
