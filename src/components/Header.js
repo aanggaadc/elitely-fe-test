@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <section className="upper-header">
         <button className="btn-icon btn-back ">
-          <img src="/assets/icon/left-icon.svg" alt="left" />
+          <img src="/assets/icon/left-arrow-icon.svg" alt="left" />
         </button>
         Explore
       </section>

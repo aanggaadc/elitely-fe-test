@@ -28,6 +28,11 @@
   line-height: 48px;
   text-align: center;
   color: #1e1e1e;
+
+  &.active {
+    color: #b2294b;
+    border-bottom: 1px solid #b2294b;
+  }
 }
 
 .sidebar {

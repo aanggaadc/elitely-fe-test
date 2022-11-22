@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="footer-container">
       {footerButton.map((item, index) => {
         return (
-          <button className="btn-icon">
+          <button key={index} className="btn-icon">
             <img src={`/assets/icon/${item}`} alt="icon" />
           </button>
         );
