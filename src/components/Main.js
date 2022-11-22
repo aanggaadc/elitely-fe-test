@@ -11,16 +11,10 @@ export default function Main() {
       <div className="carousel-container">
         <Carousel {...carouselProps}>
           <CarouselItem>
-            <img
-              src="/assets/image/profile-picture.jpg"
-              alt="profile picture"
-            />
+            <img src="/assets/image/profile-picture.jpg" alt="profile" />
           </CarouselItem>
           <CarouselItem>
-            <img
-              src="/assets/image/profile-picture.jpg"
-              alt="profile picture"
-            />
+            <img src="/assets/image/profile-picture.jpg" alt="profile" />
           </CarouselItem>
         </Carousel>
       </div>

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.scss";
 const navigation = ["Home", "Explore", "Feed", "Scheduled"];
+const currentStage = "Explore";
 
 export default function Header() {
-  const [stage, setStage] = useState("Explore");
   return (
     <header>
       <section className="upper-header">
@@ -19,7 +19,7 @@ export default function Header() {
             return (
               <li
                 key={index}
-                className={`nav-item ${stage === item && "active"}`}
+                className={`nav-item ${currentStage === item && "active"}`}
               >
                 {item}
               </li>

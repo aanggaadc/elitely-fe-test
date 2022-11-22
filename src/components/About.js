@@ -21,7 +21,8 @@ const detailRight = [
   "$200 / 2h",
 ];
 
-export default function About() {
+export default function About(props) {
+  const { deviceType } = props;
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselProps = { activeIndex, setActiveIndex };
 
@@ -121,8 +122,63 @@ export default function About() {
       <div className="line" />
 
       <div className="meetup-items">
-        <Carousel {...carouselProps}>
-          <CarouselItem>
+        {deviceType === "mobile" ? (
+          <Carousel {...carouselProps}>
+            <CarouselItem>
+              <div className="meetup-item">
+                <img
+                  src="/assets/icon/recent-update-icon.svg"
+                  alt="recent update"
+                />
+                <div className="meetup-text">
+                  <div className="meetup-header">Recent Updates</div>
+                  <div className="meetup-description">
+                    I’m free today 10:30 am - 3 pm, coming from West. Open to
+                    try any area and place!
+                  </div>
+                </div>
+              </div>
+              <div className="meetup-item">
+                <img
+                  src="/assets/icon/availability-icon.svg"
+                  alt="availibility"
+                />
+                <div className="meetup-text">
+                  <div className="meetup-header">Availability</div>
+                  <div className="meetup-description">
+                    Flexi but preferably weekdays! Please arrange at least two
+                    days in advance.
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="meetup-item">
+                <img
+                  src="/assets/icon/recent-update-icon.svg"
+                  alt="recent update"
+                />
+                <div className="meetup-text">
+                  <div className="meetup-header">Activities</div>
+                  <div className="meetup-description">
+                    Cafe, bar, picnic, anything easy going!
+                  </div>
+                </div>
+              </div>
+              <div className="meetup-item">
+                <img
+                  src="/assets/icon/availability-icon.svg"
+                  alt="availibility"
+                />
+                <div className="meetup-text">
+                  <div className="meetup-header">Food Preferences</div>
+                  <div className="meetup-description">Pasta and Sushi</div>
+                </div>
+              </div>
+            </CarouselItem>
+          </Carousel>
+        ) : (
+          <>
             <div className="meetup-item">
               <img
                 src="/assets/icon/recent-update-icon.svg"
@@ -149,8 +205,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </CarouselItem>
-          <CarouselItem>
             <div className="meetup-item">
               <img
                 src="/assets/icon/recent-update-icon.svg"
@@ -173,8 +227,8 @@ export default function About() {
                 <div className="meetup-description">Pasta and Sushi</div>
               </div>
             </div>
-          </CarouselItem>
-        </Carousel>
+          </>
+        )}
       </div>
     </div>
   );

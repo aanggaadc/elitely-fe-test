@@ -83,6 +83,14 @@
   margin-bottom: 11px;
 }
 
+.meetups-btn {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .meetup-items {
   margin-bottom: 94px;
 }
