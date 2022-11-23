@@ -43,13 +43,25 @@
   }
 }
 
-.rating {
+.rating-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 16px;
   justify-content: space-between;
+
+  @media (min-width: 760px) {
+    flex-direction: row;
+    gap: auto;
+  }
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-bottom: 18px;
+  justify-content: space-between;
+  gap: 90px;
 }
 
 .rating-left {
@@ -79,6 +91,10 @@
   @media (min-width: 768px) {
     font-size: 12px;
   }
+
+  @media (min-width: 900px) {
+    white-space: nowrap;
+  }
 }
 
 .reviews-btn {
@@ -90,6 +106,11 @@
   font-size: 14px;
   color: #1e1e1e;
   border: none;
+
+  @media (min-width: 760px) {
+    min-width: 100px;
+    width: 200px;
+  }
 }
 
 .meetups {

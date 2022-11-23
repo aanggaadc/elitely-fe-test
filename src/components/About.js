@@ -82,15 +82,17 @@ export default function About(props) {
 
         <div className="line" />
 
-        <div className="rating">
-          <div className="rating-left">
-            Rating
-            <div className="stars">{getStars(4)}</div>
+        <div className="rating-container">
+          <div className="rating">
+            <div className="rating-left">
+              Rating
+              <div className="stars">{getStars(4)}</div>
+            </div>
+            <div className="rating-right">4.5 of 193 reviews</div>
           </div>
-          <div className="rating-right">4.5 of 193 reviews</div>
-        </div>
 
-        <button className="reviews-btn">Reviews</button>
+          <button className="reviews-btn">Reviews</button>
+        </div>
       </div>
 
       <div className="meetups">
