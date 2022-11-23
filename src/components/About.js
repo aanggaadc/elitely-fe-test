@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Carousel, { CarouselItem } from "./Caraousel";
+import Carousel, { CarouselItem } from "./Carousel";
 import { meetupContent } from "../helper/dummyData";
 import "./About.scss";
 const detailLeft = [

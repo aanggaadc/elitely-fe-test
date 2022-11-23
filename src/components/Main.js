@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Carousel, { CarouselItem } from "./Caraousel";
+import Carousel, { CarouselItem } from "./Carousel";
 import "./Main.scss";
 
 export default function Main() {
