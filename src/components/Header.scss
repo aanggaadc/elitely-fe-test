@@ -1,4 +1,6 @@
 .nav {
+  width: 100%;
+  max-width: 1366px;
   display: none;
   height: 48px;
   margin: 0 auto;
@@ -36,6 +38,8 @@
 
 .upper-header {
   width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   height: 64px;
   padding: 0 16px;
   background: #ffffff;
@@ -72,9 +76,20 @@
 .profile {
   display: flex;
   flex-direction: row;
+  gap: 16px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 16px;
+  align-items: flex-start;
+
+  @media (min-width: 768px) {
+    align-items: center;
+  }
 }
 
 .profile-left {

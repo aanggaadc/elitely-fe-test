@@ -29,30 +29,33 @@ export default function Header() {
       </nav>
 
       <section className="bottom-header">
-        <div className="profile">
-          <div className="profile-left">
-            <div className="avatar-outer">
-              <div className="avatar-inner">
-                <img src="/assets/image/profile-picture.jpg" alt="profile" />
+        <div className="profile-container">
+          <div className="profile">
+            <div className="profile-left">
+              <div className="avatar-outer">
+                <div className="avatar-inner">
+                  <img src="/assets/image/profile-picture.jpg" alt="profile" />
+                </div>
               </div>
-            </div>
-            <div className="badge">personality</div>
-          </div>
-
-          <div className="profile-right">
-            <div className="username">
-              @xuixian_98
-              <img src="/assets/icon/verified-icon.svg" alt="badge" />
+              <div className="badge">personality</div>
             </div>
 
-            <div className="user-status">
-              <div className="online" />
-              Online Now
-            </div>
+            <div className="profile-right">
+              <div className="username">
+                @xuixian_98
+                <img src="/assets/icon/verified-icon.svg" alt="badge" />
+              </div>
 
-            <div className="user-about">
-              İ’m your manic pixie dream girl ~ Design student and anime weeb.
-              Coffee addict. Anime fan and games. Come say hi!
+              <div className="user-status">
+                <div className="online" />
+                Online Now
+              </div>
+
+              <div className="user-about">
+                İ’m your manic pixie dream girl ~ <br />
+                Design student and anime weeb. Coffee addict. Anime fan and
+                games. Come say hi!
+              </div>
             </div>
           </div>
 

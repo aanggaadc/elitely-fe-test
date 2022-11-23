@@ -23,21 +23,21 @@ export const verifiedMember = [
   {
     username: "@fight4myway",
     badge: "influencer",
-    avatar: "/assets/image/user1.jpg",
+    avatar: "/assets/image/user4.jpg",
     about:
       "Lorem ipsum dolor sit amet consectetur. Eu ipsum id egestas viverra vitae posuere netus. Nec suspendisse et sit dictum dui aliquet nulla quam. Tincidunt ut.",
   },
   {
     username: "@tortally_Spice",
     badge: "personality",
-    avatar: "/assets/image/user2.jpg",
+    avatar: "/assets/image/user5.jpg",
     about:
       "Lorem ipsum dolor sit amet consectetur. Eu ipsum id egestas viverra vitae posuere netus. Nec suspendisse et sit dictum dui aliquet nulla quam. Tincidunt ut.",
   },
   {
     username: "@deePosh",
     badge: "personality",
-    avatar: "/assets/image/user3.jpg",
+    avatar: "/assets/image/user6.jpg",
     about:
       "Lorem ipsum dolor sit amet consectetur. Eu ipsum id egestas viverra vitae posuere netus. Nec suspendisse et sit dictum dui aliquet nulla quam. Tincidunt ut.",
   },

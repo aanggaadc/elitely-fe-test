@@ -25,6 +25,10 @@
   font-size: 12px;
   line-height: 18px;
   color: #1e1e1e;
+
+  @media (min-width: 615px) {
+    font-size: 14px;
+  }
 }
 
 .detail-right {
@@ -33,6 +37,10 @@
   font-size: 12px;
   line-height: 18px;
   color: #878787;
+
+  @media (min-width: 615px) {
+    font-size: 14px;
+  }
 }
 
 .rating {
@@ -51,6 +59,10 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .stars {
@@ -63,6 +75,10 @@
   font-weight: 400;
   font-size: 10px;
   color: #1e1e1e;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .reviews-btn {
@@ -81,6 +97,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 11px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1e1e1e;
 }
 
 .meetups-btn {
@@ -112,6 +132,10 @@
   line-height: 18px;
   color: #1e1e1e;
   margin-bottom: 2px;
+
+  @media (min-width: 615px) {
+    font-size: 14px;
+  }
 }
 
 .meetup-description {
@@ -119,4 +143,8 @@
   font-size: 12px;
   line-height: 18px;
   color: #878787;
+
+  @media (min-width: 615px) {
+    font-size: 14px;
+  }
 }
