@@ -5,7 +5,7 @@ import Main from "./components/Main";
 import About from "./components/About";
 import Card from "./components/Card";
 import { debounce } from "./helper/utils";
-import { newMember, verifiedMember } from "./helper/userData";
+import { newMember, verifiedMember } from "./helper/dummyData";
 import "./App.scss";
 const sectionButton = ["Main", "About", "Posts"];
 

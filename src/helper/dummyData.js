@@ -42,3 +42,28 @@ export const verifiedMember = [
       "Lorem ipsum dolor sit amet consectetur. Eu ipsum id egestas viverra vitae posuere netus. Nec suspendisse et sit dictum dui aliquet nulla quam. Tincidunt ut.",
   },
 ];
+
+export const meetupContent = [
+  {
+    title: "Recent Updates",
+    description:
+      "I’m free today 10:30 am - 3 pm, coming from West. Open to try any area and place!",
+    image: "/assets/icon/recent-update-icon.svg",
+  },
+  {
+    title: "Availability",
+    description:
+      "Flexi but preferably weekdays! Please arrange at least two days in advance.",
+    image: "/assets/icon/availability-icon.svg",
+  },
+  {
+    title: "Activities",
+    description: "Cafe, bar, picnic, anything easy going!",
+    image: "/assets/icon/recent-update-icon.svg",
+  },
+  {
+    title: "Food Preferences",
+    description: "Pasta and Sushi",
+    image: "/assets/icon/availability-icon.svg",
+  },
+];

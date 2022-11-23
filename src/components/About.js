@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel, { CarouselItem } from "./Caraousel";
+import { meetupContent } from "../helper/dummyData";
 import "./About.scss";
 const detailLeft = [
   "Age",
@@ -127,108 +128,51 @@ export default function About(props) {
         {deviceType === "mobile" ? (
           <Carousel {...carouselProps}>
             <CarouselItem>
-              <div className="meetup-item">
-                <img
-                  src="/assets/icon/recent-update-icon.svg"
-                  alt="recent update"
-                />
-                <div className="meetup-text">
-                  <div className="meetup-header">Recent Updates</div>
-                  <div className="meetup-description">
-                    I’m free today 10:30 am - 3 pm, coming from West. Open to
-                    try any area and place!
+              {meetupContent.slice(0, 2).map((item, index) => {
+                const { title, description, image } = item;
+
+                return (
+                  <div key={index} className="meetup-item">
+                    <img src={image} alt={title} />
+                    <div className="meetup-text">
+                      <div className="meetup-header">{title}</div>
+                      <div className="meetup-description">{description}</div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="meetup-item">
-                <img
-                  src="/assets/icon/availability-icon.svg"
-                  alt="availibility"
-                />
-                <div className="meetup-text">
-                  <div className="meetup-header">Availability</div>
-                  <div className="meetup-description">
-                    Flexi but preferably weekdays! Please arrange at least two
-                    days in advance.
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </CarouselItem>
             <CarouselItem>
-              <div className="meetup-item">
-                <img
-                  src="/assets/icon/recent-update-icon.svg"
-                  alt="recent update"
-                />
-                <div className="meetup-text">
-                  <div className="meetup-header">Activities</div>
-                  <div className="meetup-description">
-                    Cafe, bar, picnic, anything easy going!
+              {meetupContent.slice(2, 4).map((item, index) => {
+                const { title, description, image } = item;
+
+                return (
+                  <div key={index} className="meetup-item">
+                    <img src={image} alt={title} />
+                    <div className="meetup-text">
+                      <div className="meetup-header">{title}</div>
+                      <div className="meetup-description">{description}</div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className="meetup-item">
-                <img
-                  src="/assets/icon/availability-icon.svg"
-                  alt="availibility"
-                />
-                <div className="meetup-text">
-                  <div className="meetup-header">Food Preferences</div>
-                  <div className="meetup-description">Pasta and Sushi</div>
-                </div>
-              </div>
+                );
+              })}
             </CarouselItem>
           </Carousel>
         ) : (
           <>
-            <div className="meetup-item">
-              <img
-                src="/assets/icon/recent-update-icon.svg"
-                alt="recent update"
-              />
-              <div className="meetup-text">
-                <div className="meetup-header">Recent Updates</div>
-                <div className="meetup-description">
-                  I’m free today 10:30 am - 3 pm, coming from West. Open to try
-                  any area and place!
+            {meetupContent.map((item, index) => {
+              const { title, description, image } = item;
+
+              return (
+                <div key={index} className="meetup-item">
+                  <img src={image} alt={title} />
+                  <div className="meetup-text">
+                    <div className="meetup-header">{title}</div>
+                    <div className="meetup-description">{description}</div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="meetup-item">
-              <img
-                src="/assets/icon/availability-icon.svg"
-                alt="availibility"
-              />
-              <div className="meetup-text">
-                <div className="meetup-header">Availability</div>
-                <div className="meetup-description">
-                  Flexi but preferably weekdays! Please arrange at least two
-                  days in advance.
-                </div>
-              </div>
-            </div>
-            <div className="meetup-item">
-              <img
-                src="/assets/icon/recent-update-icon.svg"
-                alt="recent update"
-              />
-              <div className="meetup-text">
-                <div className="meetup-header">Activities</div>
-                <div className="meetup-description">
-                  Cafe, bar, picnic, anything easy going!
-                </div>
-              </div>
-            </div>
-            <div className="meetup-item">
-              <img
-                src="/assets/icon/availability-icon.svg"
-                alt="availibility"
-              />
-              <div className="meetup-text">
-                <div className="meetup-header">Food Preferences</div>
-                <div className="meetup-description">Pasta and Sushi</div>
-              </div>
-            </div>
+              );
+            })}
           </>
         )}
       </div>
