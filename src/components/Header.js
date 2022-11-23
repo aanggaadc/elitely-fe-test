@@ -42,7 +42,7 @@ export default function Header() {
           <div className="profile-right">
             <div className="username">
               @xuixian_98
-              <img src="/assets/icon/badge-icon.svg" alt="badge" />
+              <img src="/assets/icon/verified-icon.svg" alt="badge" />
             </div>
 
             <div className="user-status">
