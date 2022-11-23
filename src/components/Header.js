@@ -10,7 +10,7 @@ export default function Header() {
         <button className="btn-icon btn-back ">
           <img src="/assets/icon/left-arrow-icon.svg" alt="left" />
         </button>
-        Explore
+        <div className="header-text">Explore</div>
       </section>
 
       <nav className="nav">
