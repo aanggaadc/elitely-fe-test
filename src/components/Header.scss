@@ -85,7 +85,7 @@
 .profile {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  // gap: 16px;
 }
 
 .profile-container {
@@ -143,6 +143,7 @@
   flex-direction: column;
   gap: 6px;
   justify-content: center;
+  margin-left: 16px;
 }
 
 .username {
